@@ -44,7 +44,7 @@ def run(env, agent, n_episodes=20000, max_t=5000, brain_name="", breakWhenSolved
         max_score = np.max(score)
         scores_window.append(max_score)    
         scores.append(max_score)          
-        print('\rEpisode {}\tAverage Score: {:.2f}\tScore: {:.2f}\tTime: {:.2f}\tMax Score: {:.2f}\tNM1: {:.6f},\tNM2 {:.6f}\tMem size: {:.2f}\tSteps:{}'.format(i_episode, np.mean(scores_window), max_score, timeit.default_timer() - start, np.max(scores), agent.noises1.mean(), agent.noises2.mean(), len(agent.memory), steps), end="")
+        print('\rEpisode {}\tAverage Score: {:.2f}\tScore: {:.2f}\tTime: {:.2f}\tMax Score: {:.2f}\tMem size: {:.2f}\tSteps:{}'.format(i_episode, np.mean(scores_window), max_score, timeit.default_timer() - start, np.max(scores), len(agent.memory), steps), end="")
         if i_episode % 100 == 0:
             print('\nEpisode {}\tAverage Score: {:.2f}\tTime: {:.2f}'.format(i_episode, np.mean(scores_window), timeit.default_timer() - start))
             plot_scores(scores)
