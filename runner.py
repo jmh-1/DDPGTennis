@@ -50,8 +50,8 @@ def run(env, agent, n_episodes=20000, max_t=5000, brain_name="", breakWhenSolved
             plot_scores(scores)
         if np.mean(scores_window)>=.5 and not solved:
             print('\nEnvironment solved in {:d} episodes!\tAverage Score: {:.2f}\tTime: {:.2f}'.format(i_episode-100, np.mean(scores_window), timeit.default_timer() - start))
-            torch.save(agent.actor_local.state_dict(), 'checkpoint_actor.pth')
-            torch.save(agent.critic_local.state_dict(), 'checkpoint_critic.pth')
+            torch.save(agent.actor_local.state_dict(), 'actor_' + state_file_name)
+            torch.save(agent.critic_local.state_dict(), 'critic_' + state_file_name)
             if breakWhenSolved:
                 break
             solved = True
