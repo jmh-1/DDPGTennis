@@ -24,7 +24,7 @@ Running the project requires the following python dependencies which can be inst
 		scipy
 		ipykernel
 
-It also requires the reacher environment, which can be dowloaded [here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Linux_NoVis.zip), unzip this file in the root directory. 
+It also requires the Tennis environment, which can be dowloaded [here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Linux_NoVis.zip), unzip this file in the root directory. 
 
 
 Tennis.ipynb can be used to test the agent created for this project, by running the cells in order. 
