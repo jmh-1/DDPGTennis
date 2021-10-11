@@ -27,7 +27,7 @@ The DDPG agent also uses experience replay and selects actions with the addition
 
 ![Scores](per_ddpg_tennis_scores.png)
 
-I also tried using DDPG with prioritized experience replay (PER). The performance seemed more stable and the environment was solved after only 967 episodes, although in my environment it took a longer time. This algorithm was mostly the same as described above. Aside from the use of PER, I also multiplied the noise by 10 and used the following set of hyperparameters. 
+I also tried using DDPG with prioritized experience replay (PER). The performance seemed more stable and the environment was solved after only 721 episodes, although in my environment it took a longer time. This algorithm was mostly the same as described above. Aside from the use of PER, I also multiplied the noise by 10 and used the following set of hyperparameters. 
 
 		BUFFER_SIZE = int(2 ** 16)
 		BATCH_SIZE = 256
